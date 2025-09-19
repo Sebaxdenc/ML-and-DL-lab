@@ -1,4 +1,6 @@
-# ML-and-DL-lab
-The purpose of this lab is to apply fundamental concepts of Machine Learning (ML) and Deep Learning (DL) for the analysis, preprocessing, training, and evaluation of predictive models. A complete process of data analysis and supervised modeling will be carried out, making decisions based on the exploration and results obtained.
+# Introducción
+Este proyecto utiliza técnicas de Machine Learning (ML) y Deep Learning (DL) para analizar y predecir el precio de computadoras portátiles a partir de sus características técnicas. El objetivo principal es construir modelos capaces de estimar el precio de un laptop en euros utilizando información como el tamaño de pantalla, memoria RAM, tipo de almacenamiento, peso, resolución, y la presencia de GPU dedicada, entre otros atributos.
+
+A través de un proceso de limpieza, preprocesamiento y selección de variables, se entrenan y comparan diferentes algoritmos de regresión, incluyendo modelos tradicionales como k-Nearest Neighbors y Random Forest, así como redes neuronales profundas. El análisis permite entender la influencia de cada característica en el precio y evaluar el desempeño de los modelos en la predicción de nuevos casos, facilitando la toma de decisiones y el entendimiento del mercado de laptops.
 
 ![Diagrama de flujo pipeline](imgs/flujo_pipeline.jpeg)
