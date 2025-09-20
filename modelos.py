@@ -210,3 +210,28 @@ for model_name, res_dict in [("kNN", knn_results), ("RandomForest", rf_results),
 
 print(f"\nPara producción elegiríamos {best_model} porque logró el mejor equilibrio entre bias y varianza en val/test.\n")
 print("=== FIN DEL PROCESO ===")
+
+
+# Muestra artificial
+
+muestra = {
+    "Inches": 15.6,
+    "Ram": 16,
+    "Weight": 2.2,
+    "TotalStorageGB": 1000, 
+    "ppi": 141,            
+    "Has_dedicated_gpu": 1  
+}
+
+X_nueva = pd.DataFrame([muestra])
+X_nueva_proc = preprocessor.transform(X_nueva)
+
+if best_model == "kNN":
+    modelo = knn
+elif best_model == "RandomForest":
+    modelo = rf
+else:
+    modelo = dnn
+
+prediccion = modelo.predict(X_nueva_proc)
+print(f"Predicción para la muestra artificial: {float(prediccion[0]):.2f} euros")
