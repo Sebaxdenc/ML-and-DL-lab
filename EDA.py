@@ -21,12 +21,10 @@ print("\nVeamos las primeras filas para conocer cómo se ve:\n")
 print(df.head(), "\n")
 print("Revisando si hay valores nulos:\n")
 print(df.isnull().sum(), "\n")
-print("Así identificamos si tenemos que hacer limpieza antes de analizar.\n")
 
 # ---------------------------
 # PASO 2: LIMPIEZA Y FEATURES
 # ---------------------------
-print("Limpiando datos y creando nuevas columnas para que sea más fácil analizarlos...")
 
 # --- RAM ---
 print("\nConvirtiendo la RAM de texto ('8GB') a número (8)...")
@@ -91,7 +89,6 @@ print("\nDatos listos para analizar.\n")
 # ---------------------------
 print("Veamos estadísticas básicas (promedio, min, max)...\n")
 print(df[['Price_euros','Inches','Ram','Weight','TotalStorageGB','ppi']].describe())
-print("\nAquí ya podemos ver cosas interesantes, como el precio promedio y el rango de valores.")
 
 # ---------------------------
 # PASO 4: DISTRIBUCIONES
